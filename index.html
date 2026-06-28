@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BF Compiler</title>
+</head>
+<body>
+    <div class="container">
+        <h1>BF Compiler</h1>
+        <div class="editor-section">
+            <label for="textArea">Brainfuck Code:</label>
+            <textarea name="Code" id="textArea" placeholder="Enter Brainfuck code here..."></textarea>
+            <button onclick="run()">Run</button>
+            <button onclick="clearOutput()">Clear Output</button>
+        </div>
+        <div class="output-section">
+            <h3>Output</h3>
+            <pre id="output">Output will be displayed here.</pre>
+        </div>
+        <div class="info">
+            <h4>Brainfuck Commands:</h4>
+            <ul>
+                <li><code>&gt;</code> - Move pointer right</li>
+                <li><code>&lt;</code> - Move pointer left</li>
+                <li><code>+</code> - Increment cell</li>
+                <li><code>-</code> - Decrement cell</li>
+                <li><code>.</code> - Output cell as character</li>
+                <li><code>,</code> - Input a character</li>
+                <li><code>[</code> - Start loop (if cell = 0, jump to ])</li>
+                <li><code>]</code> - End loop (if cell ≠ 0, jump to [)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

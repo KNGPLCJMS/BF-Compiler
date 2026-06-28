@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    color: rgb(86, 86, 86);
+    font-family: Copperplate, "Copperplate Gothic Light", fanstasy, serif;
+}
+h1{
+    color: rgb(44, 44, 44);
+}
+.output-section{
+    background-color: rgb(149, 149, 149);
+    border-radius: 5px;
+    border-color: rgb(205, 205, 205);
+    border-style: solid;
+    padding:10px;
+    border-width: 5px;
+}
+#textArea{
+    resize: none;
+    padding: 10px;
+    height: 200px;
+}
